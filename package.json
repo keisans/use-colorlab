@@ -9,8 +9,8 @@
   "scripts": {
     "prepublishOnly": "npm run build",
     "prebuild": "npm run lint && rm -rf ./dist",
-    "dev": "microbundle watch -o ./dist --compress false --target web",
-    "build": "microbundle -o ./dist --target web --no-compress --jsx React.createElement",
+    "dev": "microbundle watch -o ./dist --no-compress --target web --jsx React.createElement",
+    "build": "microbundle -o ./dist --target web --jsx React.createElement",
     "lint": "eslint src"
   },
   "author": "",
