@@ -1,0 +1,33 @@
+{
+  "name": "use-colorlab",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/use-colorlab.js",
+  "main:umd": "dist/use-colorlab.umd.js",
+  "module": "dist/use-colorlab.m.js",
+  "source": "src/index.js",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "prebuild": "npm run lint && rm -rf ./dist",
+    "dev": "microbundle watch -o ./dist --compress false --target web",
+    "build": "microbundle -o ./dist --target web --no-compress --jsx React.createElement",
+    "lint": "eslint src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1",
+    "microbundle": "^0.11.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.8.6"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "dependencies": {}
+}

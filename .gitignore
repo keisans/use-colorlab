@@ -1,0 +1,9 @@
+# Core
+node_modules
+.DS_Store
+
+# Dist folder
+dist
+
+# ctags
+tags
