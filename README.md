@@ -1,4 +1,5 @@
 # use-colorlab
+![version](https://img.shields.io/npm/v/use-colorlab)
 
 A custom React Hook that provides a context for color data. This is designed to be used with the export object from https://colorlab.dev 
 ## Installation
